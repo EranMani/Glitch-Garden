@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Level_Loader : MonoBehaviour
+public class LevelLoader : MonoBehaviour
 {
     [SerializeField] float loadScreenTime;
 
