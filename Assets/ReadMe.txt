@@ -1,3 +1,10 @@
+01/05/21
+- Master branch
+* Created parent - child relationship for cactus and lizard models to get more control over the animation placement in the scene
+* Added buttons UI to spawn a defender type based on player selection. Each defender has a defender script attached
+* In the buttons UI, added text to show a visual for how many stars the player currently have
+* In the buttons UI, click on the defender sprite will highlight it with white color
+
 29/04/21
 - Master branch
 * Added a big list of spritesheets to use

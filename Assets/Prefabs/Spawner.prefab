@@ -45,4 +45,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpawnDelay: 1
   maxSpawnDelay: 5
-  attackerPrefab: {fileID: 6019718154364344710, guid: 68630ac9cf883f845b556174a871151c, type: 3}
+  attackerPrefab: {fileID: 5502743616374070364, guid: 68630ac9cf883f845b556174a871151c, type: 3}
