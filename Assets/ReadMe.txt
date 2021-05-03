@@ -1,3 +1,7 @@
+04/05/21
+- Master branch
+* Added the ability to use the stars to buy defenders or to receive them from the trophy object
+
 01/05/21
 - Master branch
 * Created parent - child relationship for cactus and lizard models to get more control over the animation placement in the scene

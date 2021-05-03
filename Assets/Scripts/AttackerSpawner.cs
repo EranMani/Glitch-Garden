@@ -14,7 +14,8 @@ public class AttackerSpawner : MonoBehaviour
         {
             int spawnTime = Random.Range(minSpawnDelay, maxSpawnDelay);
             yield return new WaitForSeconds(spawnTime);
-            Instantiate(attackerPrefab, transform.position, Quaternion.identity);       
+            Attacker newAttacker = Instantiate(attackerPrefab, transform.position, Quaternion.identity);
+            newAttacker.transform.parent = transform;
         }
     }
 
