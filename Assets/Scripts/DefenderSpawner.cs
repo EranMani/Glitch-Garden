@@ -16,6 +16,7 @@ public class DefenderSpawner : MonoBehaviour
     public void SetSelectedDefender(Defender defenderSelected)
     {
         defender = defenderSelected;
+        print(defender);
     }
 
     private Vector2 GetSquareClicked()

@@ -1,3 +1,11 @@
+05/05/21
+- Master branch
+* Added new defenders to the list - gnome and gravestone
+* Defenders projectile now hit and destory objects with the Attacker script attached
+* Added new projectile named Zucchini 
+* Defenders animation is switching between idle and attack once an Attacker is in their line of sight
+* Defenders attack animation has an animation event which instantiate the projectils 
+
 04/05/21
 - Master branch
 * Added the ability to use the stars to buy defenders or to receive them from the trophy object
