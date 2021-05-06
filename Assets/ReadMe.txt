@@ -1,3 +1,11 @@
+06/05/21
+- Master branch
+* Added new attacker named fox
+* Organized prefabs in folders
+* Added transition to game over scene
+* Added timer with a UI slider
+* Added behaviour which will stop the spawners when the timer is done, and when all attackers are dead the level will end
+
 05/05/21
 - Master branch
 * Added new defenders to the list - gnome and gravestone

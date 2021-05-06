@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class LevelLoader : MonoBehaviour
 {
     [SerializeField] float loadScreenTime;
+    int currentIndex;
 
     int currentSceneIndex;
 
@@ -14,13 +15,23 @@ public class LevelLoader : MonoBehaviour
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         if (currentSceneIndex == 0)
         {
-            StartCoroutine(LoadStartScreen());
+            StartCoroutine(WaitForLoad());
         }  
     }
 
-    IEnumerator LoadStartScreen()
+    IEnumerator WaitForLoad()
     {
         yield return new WaitForSeconds(loadScreenTime);
+        LoadNextScene();
+    }
+
+    public void LoadNextScene()
+    {
         SceneManager.LoadScene(currentSceneIndex+1);
+    }
+
+    public void GameOver()
+    {
+        SceneManager.LoadScene("Game_Over");
     }
 }
