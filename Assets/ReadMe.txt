@@ -5,6 +5,8 @@
 * Added transition to game over scene
 * Added timer with a UI slider
 * Added behaviour which will stop the spawners when the timer is done, and when all attackers are dead the level will end
+* Added visual representation to the player when the level is complete or lost
+* When level is lost, the player can choose if to restart or go back to the main menu
 
 05/05/21
 - Master branch

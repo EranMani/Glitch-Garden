@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class LevelLoader : MonoBehaviour
 {
     [SerializeField] float loadScreenTime;
-    int currentIndex;
 
     int currentSceneIndex;
 
@@ -30,8 +29,25 @@ public class LevelLoader : MonoBehaviour
         SceneManager.LoadScene(currentSceneIndex+1);
     }
 
+    public void LoadMainMenu()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("Start_Screen");
+    }
+
+    public void RestartCurrentScene()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(currentSceneIndex);
+    }
+
     public void GameOver()
     {
         SceneManager.LoadScene("Game_Over");
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }

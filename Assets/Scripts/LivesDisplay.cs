@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class LivesDisplay : MonoBehaviour
 {
     LevelLoader levelLoader;
+    LevelController levelController;
 
     [SerializeField] int lives = 5;
     [SerializeField] int damage = 1;
@@ -15,6 +16,7 @@ public class LivesDisplay : MonoBehaviour
     void Start()
     {
         levelLoader = FindObjectOfType<LevelLoader>();
+        levelController = FindObjectOfType<LevelController>();
         livesText = GetComponent<Text>();
 
         UpdateDisplay();
@@ -34,8 +36,7 @@ public class LivesDisplay : MonoBehaviour
 
         if (lives <= 0)
         {
-            print("GAME OVER!");
-            levelLoader.GameOver();
+            levelController.HandleLoseCondition();
         }
     }
 }
