@@ -4,6 +4,8 @@
 * Added option menu scene that controls the music volume and game difficulty
 * Added simple difficulty option that will change the player lives based on difficulty amount
 * Created very basic playerPrefs class to store volume and difficulty values
+* Clean hierarchy by grouping defenders and projectiles automatically into an empty gameobject
+* Added text element for each defender button UI to display star cost for each
 
 06/05/21
 - Master branch
