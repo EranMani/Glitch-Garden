@@ -294,6 +294,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level_Lost_Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 3080433454527667549, guid: d47eccb761edcf44c875fd299d33cb97, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3236766663377667364, guid: d47eccb761edcf44c875fd299d33cb97, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

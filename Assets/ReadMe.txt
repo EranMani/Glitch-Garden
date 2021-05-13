@@ -1,3 +1,10 @@
+13/05/21
+- Master branch
+* Added simple music to play throught the game
+* Added option menu scene that controls the music volume and game difficulty
+* Added simple difficulty option that will change the player lives based on difficulty amount
+* Created very basic playerPrefs class to store volume and difficulty values
+
 06/05/21
 - Master branch
 * Added new attacker named fox

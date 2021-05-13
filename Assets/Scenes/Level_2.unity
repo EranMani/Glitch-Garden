@@ -452,6 +452,10 @@ PrefabInstance:
       propertyPath: winDisplay
       value: 
       objectReference: {fileID: 5527298850203178884}
+    - target: {fileID: 1812739151426157571, guid: 9429927743d13cc4e998ddcd6ea5baf8, type: 3}
+      propertyPath: loseDisplay
+      value: 
+      objectReference: {fileID: 5527298850203178884}
     - target: {fileID: 2279280265154617262, guid: 9429927743d13cc4e998ddcd6ea5baf8, type: 3}
       propertyPath: m_Name
       value: Level_Controller
