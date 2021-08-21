@@ -31,14 +31,16 @@ public class LevelController : MonoBehaviour
     public void AttackerKilled()
     {
         numberOfAttackers--;
-        if (levelTimerFinished && numberOfAttackers <= 0)
-        {
-            StartCoroutine(HandleWinCondition());
-        }
     }
 
     IEnumerator HandleWinCondition()
     {
+        Attacker[] attackers = FindObjectsOfType<Attacker>();
+        foreach (Attacker attacker in attackers)
+        {
+            attacker.gameObject.SetActive(false);
+        }
+
         winDisplay.SetActive(true);
         audioSource.Play();
         yield return new WaitForSeconds(waitToLoad);
@@ -55,6 +57,7 @@ public class LevelController : MonoBehaviour
     {
         levelTimerFinished = true;
         StopSpawners();
+        StartCoroutine(HandleWinCondition());
     }
 
     private void StopSpawners()
@@ -62,6 +65,7 @@ public class LevelController : MonoBehaviour
         AttackerSpawner[] spawnerArray = FindObjectsOfType<AttackerSpawner>();
         foreach (AttackerSpawner spawner in spawnerArray)
         {
+            spawner.gameObject.SetActive(false);
             spawner.StopSpawning();
         }
     }

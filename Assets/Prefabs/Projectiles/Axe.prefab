@@ -136,3 +136,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 1
   damageAmount: 120
+  aliveTime: 2
