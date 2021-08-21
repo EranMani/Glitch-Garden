@@ -6,6 +6,12 @@ public class Projectile : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 1f;
     [SerializeField] int damageAmount = 5;
+    [SerializeField] float aliveTime = 2f;
+
+    private void Start()
+    {
+        Destroy(gameObject, aliveTime);
+    }
 
     void Update()
     {
